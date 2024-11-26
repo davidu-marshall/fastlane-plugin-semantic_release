@@ -68,7 +68,7 @@ module Fastlane
           result += "\n"
 
           commits.each do |commit|
-            next if commit[:type] != type || commit[:is_merge]
+            next if commit[:type] != type
 
             result += "-"
 

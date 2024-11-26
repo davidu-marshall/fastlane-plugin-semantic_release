@@ -8,7 +8,8 @@ module Fastlane
       def self.format_patterns
         return {
           "default" => /^(docs|fix|feat|chore|style|refactor|perf|test)(?:\((.*)\))?(!?)\: (.*)/,
-          "angular" => /^(\w*)(?:\((.*)\))?(): (.*)/
+          "angular" => /^(\w*)(?:\((.*)\))?(): (.*)/,
+          "azure" => /^Merged PR \d+: (docs|fix|feat|chore|style|refactor|perf|test)(?:\((.*)\))?(!?)\: (.*)/
         }
       end
 
